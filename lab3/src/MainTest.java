@@ -9,7 +9,7 @@ public class MainTest {
     public void bucketSortTest() {
         int[] array = {29, 25, 3, 49, 9, 37, 21, 43};
         int bucketSize = 10;
-        Main.bucketSort(array, bucketSize);
+        Sort.bucketSort(array, bucketSize);
         int[] expected = {3, 9, 21, 25, 29, 37, 43, 49};
         Assert.assertArrayEquals(array, expected);
     }
@@ -17,7 +17,7 @@ public class MainTest {
     public void emptyBucketSortTest() {
         int[] array = {};
         int bucketSize = 0;
-        Main.bucketSort(array, bucketSize);
+        Sort.bucketSort(array, bucketSize);
         int[] expected = {};
         Assert.assertArrayEquals(array, expected);
     }
@@ -25,7 +25,7 @@ public class MainTest {
     public void onlyNegativeBucketSortTest() {
         int[] array = {-29, -25, -3, -49, -9, -37, -21, -43};
         int bucketSize = 10;
-        Main.bucketSort(array, bucketSize);
+        Sort.bucketSort(array, bucketSize);
         int[] expected = {-49, -43, -37, -29, -25, -21, -9, -3};
         Assert.assertArrayEquals(array, expected);
     }
